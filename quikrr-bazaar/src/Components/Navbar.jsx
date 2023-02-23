@@ -16,19 +16,15 @@ import {
     MenuButton,
     MenuList,
     MenuItem,
-    MenuItemOption,
-    MenuGroup,
-    MenuOptionGroup,
-    MenuDivider,
 
 } from "@chakra-ui/react";
 
-import { MoonIcon, SunIcon, SearchIcon, ChevronDownIcon, } from '@chakra-ui/icons';
+import { SearchIcon, ChevronDownIcon, } from '@chakra-ui/icons';
 
 const Navbar = () => {
 
     return (
-        <Box  fontSize="10px" w="80%" m={'auto'} marginTop={"50px"}
+        <Box fontSize="10px" m={'auto'} marginTop={"50px"}
             size="lg">
             <Center>
                 <HStack spacing='65px'>
@@ -73,11 +69,12 @@ const Navbar = () => {
 
                 </HStack>
             </Center>
+
             <Divider h="2" borderBottomColor={"GrayText"} />
 
             {/* ************************* */}
 
-            <Flex  gap='10'>
+            <Flex gap='10'>
                 <Menu >
                     <MenuButton >
                         <Text>Mobile & Tablets <ChevronDownIcon /></Text>
@@ -157,9 +154,9 @@ const Navbar = () => {
                         <MenuItem>Attend a Workshop</MenuItem>
                     </MenuList>
                 </Menu>
-               
-            </Flex>
 
+            </Flex>
+            <Divider h="2" borderBottomColor={"GrayText"} />
         </Box>
 
 
