@@ -16,6 +16,7 @@ import {
     MenuButton,
     MenuList,
     MenuItem,
+    Spacer,
 
 } from "@chakra-ui/react";
 
@@ -24,7 +25,12 @@ import { SearchIcon, ChevronDownIcon, } from '@chakra-ui/icons';
 const Navbar = () => {
 
     return (
-        <Box fontSize="10px" m={'auto'} marginTop={"50px"}
+        <Box fontSize="10px"
+            // m={'auto'}
+            // bg={'#FFFF'}
+            // boxShadow='dark-lg'
+            marginTop={"50px"}
+            // border="1px solid"
             size="lg">
             <Center>
                 <HStack spacing='65px'>
@@ -71,10 +77,9 @@ const Navbar = () => {
             </Center>
 
             <Divider h="2" borderBottomColor={"GrayText"} />
-
             {/* ************************* */}
 
-            <Flex gap='10'>
+            <Flex w='80%' m='auto' >
                 <Menu >
                     <MenuButton >
                         <Text>Mobile & Tablets <ChevronDownIcon /></Text>
@@ -87,6 +92,8 @@ const Navbar = () => {
                         <MenuItem>View All</MenuItem>
                     </MenuList>
                 </Menu>
+
+                <Spacer />
 
                 <Menu >
                     <MenuButton >
@@ -101,7 +108,7 @@ const Navbar = () => {
                         <MenuItem>View All</MenuItem>
                     </MenuList>
                 </Menu>
-
+                <Spacer />
                 <Menu>
                     <MenuButton >
                         <Text >Appliances<ChevronDownIcon /></Text>
@@ -115,7 +122,7 @@ const Navbar = () => {
                         <MenuItem>View All</MenuItem>
                     </MenuList>
                 </Menu>
-
+                <Spacer />
                 <Menu>
                     <MenuButton >
                         <Text > HOME APPLIANCES <ChevronDownIcon /></Text>
@@ -128,7 +135,7 @@ const Navbar = () => {
                         <MenuItem>Attend a Workshop</MenuItem>
                     </MenuList>
                 </Menu>
-
+                <Spacer />
                 <Menu>
                     <MenuButton >
                         <Text >KIDS & TOYS  <ChevronDownIcon /></Text>
@@ -141,7 +148,7 @@ const Navbar = () => {
                         <MenuItem>Attend a Workshop</MenuItem>
                     </MenuList>
                 </Menu>
-
+                <Spacer />
                 <Menu>
                     <MenuButton >
                         <Text>SPORTS & FASHION <ChevronDownIcon /></Text>
@@ -156,7 +163,9 @@ const Navbar = () => {
                 </Menu>
 
             </Flex>
+
             <Divider h="2" borderBottomColor={"GrayText"} />
+
         </Box>
 
 

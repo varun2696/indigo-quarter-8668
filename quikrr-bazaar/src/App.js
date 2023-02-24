@@ -1,17 +1,14 @@
-
 import './App.css';
-import CardData from './Components/CardData';
-import CardItem from './Components/CardItem';
+import Footer from './Components/Footer';
+import Home from './Components/Home';
 import Navbar from './Components/Navbar';
-import Slider from './Components/Slidder';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Slider/>
-      <CardData/>
-      <CardItem />
+        <Navbar/>
+        <Home/>
+        <Footer/>
     </div>
   );
 }
