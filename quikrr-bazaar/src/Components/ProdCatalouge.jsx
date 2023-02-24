@@ -9,7 +9,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons';
 
 
 
-const CardTemplate = ({ bgUrl, heading, e1, e2, e3, e4, e5 }) => {
+const ProdTemplate = ({ bgUrl, heading, e1, e2, e3, e4, e5 }) => {
 
     return (
         <>
@@ -66,13 +66,13 @@ const CardTemplate = ({ bgUrl, heading, e1, e2, e3, e4, e5 }) => {
     )
 }
 
-const CardData = () => {
+const ProdCatalouge = () => {
 
     return (
         <>
             <Text textAlign={'center'} margin="20px">Buy and Sell from 1200+ Cities Across India</Text>
             <Flex gap="5">
-                < CardTemplate key={1}
+                < ProdTemplate key={1}
                     bgUrl={'https://www.roedl.com/de-de/de/themen/PublishingImages/Themenspecial/digitalisierung-handy-731.jpg'}
                     heading={'Mobile & Tablets'}
                     e1={'Used Mobiles'}
@@ -82,7 +82,7 @@ const CardData = () => {
                     e5={'Batteries'}
                 />
 
-                < CardTemplate key={2}
+                < ProdTemplate key={2}
                     bgUrl={'https://www.roedl.com/de-de/de/themen/PublishingImages/Themenspecial/digitalisierung-handy-731.jpg'}
                     heading={'Home & Lifestyle'}
                     e1={'Furniture & Decor'}
@@ -92,7 +92,7 @@ const CardData = () => {
                     e5={'Luggages'}
                 />
 
-                < CardTemplate key={3}
+                < ProdTemplate key={3}
                     bgUrl={'https://www.roedl.com/de-de/de/themen/PublishingImages/Themenspecial/digitalisierung-handy-731.jpg'}
                     heading={'Electronics & Appliances'}
                     e1={'Laptop & Accessories'}
@@ -108,7 +108,7 @@ const CardData = () => {
     )
 }
 
-export default CardData;
+export default ProdCatalouge;
 
 
 
