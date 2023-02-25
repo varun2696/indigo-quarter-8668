@@ -90,7 +90,11 @@ const addsData = [
 const AddTemplate = ({ url, alt, title, days }) => {
     return (
         <>
-            <Box m='auto' w='105px' border={'1px solid'} fontSize={'10px'}>
+            <Box
+                w='105px'
+                m='auto'
+                // border={'1px solid'} 
+                fontSize={'10px'}>
 
                 <Box bg='#EDF2F7'>
                     <Center >
@@ -100,7 +104,7 @@ const AddTemplate = ({ url, alt, title, days }) => {
                         />
                     </Center>
                 </Box>
-                <Box p='1'>
+                <Box p='1' bg='white'>
                     <Text
                         whiteSpace="nowrap"
                         overflow='hidden'
@@ -141,8 +145,10 @@ const Adds = () => {
         <>
             <Box w='70%'
                 mt='5'
-                bg='#EDF2F7'
-                boxShadow='sm' p='5'>
+                bg='#FFF5F5'
+                boxShadow='sm'
+                p='5'
+            >
                 <Text>Trending Ads</Text>
 
                 <Carousel responsive={responsive}>

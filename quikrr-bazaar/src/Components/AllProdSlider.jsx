@@ -367,8 +367,12 @@ const AllProdSlider = () => {
 
     return (
         <>
-            <Box border={'1px solid'} mt='8' >
-                <Text>Mobile & Tablets</Text>
+            <Box
+                boxShadow={'2xl'}
+                bg='#F7FAFC'
+                borderRadius={'lg'}
+                mt='8' >
+                <Text p='3'>Mobile & Tablets</Text>
                 <Carousel responsive={responsive}>
                     {MobileItems.map((item) => (
                         <CardTemplate key={item.title}
@@ -383,8 +387,12 @@ const AllProdSlider = () => {
                 </Carousel>
             </Box>
 
-            <Box border={'1px solid'} mt='8' >
-                <Text>Home & Lifestyle</Text>
+            <Box
+                boxShadow={'2xl'}
+                bg='#F7FAFC'
+                borderRadius={'lg'}
+                mt='8' >
+                <Text p='3'>Home & Lifestyle</Text>
                 <Carousel responsive={responsive}>
                     {LifestyleArr.map((item) => (
                         <CardTemplate key={item.title}
@@ -400,8 +408,12 @@ const AllProdSlider = () => {
             </Box>
 
 
-            <Box border={'1px solid'} mt='8' >
-                <Text>Electronics & Appliances</Text>
+            <Box
+                boxShadow={'2xl'}
+                bg='#F7FAFC'
+                borderRadius={'lg'}
+                mt='8' >
+                <Text p='3'>Electronics & Appliances</Text>
                 <Carousel responsive={responsive}>
                     {AppliancesArr.map((item) => (
                         <CardTemplate key={item.title}
