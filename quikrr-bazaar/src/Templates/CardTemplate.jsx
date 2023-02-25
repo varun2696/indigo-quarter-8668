@@ -4,7 +4,14 @@ import { Box, Button, Center, Flex, Image, Spacer, Text } from "@chakra-ui/react
 const CardTemplate = ({ url, alt, title, price, location, days }) => {
     return (
         <>
-            <Box m='auto' w='170px' h="auto" border={'1px solid'} mt='5' mb='10' fontSize={'12px'}>
+            <Box
+                w='170px'
+                m='auto'
+                mt='5'
+                mb='10'
+                bg={'#FFF5F5'}
+                fontSize={'12px'}>
+
                 <Box bg='#EDF2F7'>
                     <Center >
                         <Image h={'120px'}
@@ -15,6 +22,7 @@ const CardTemplate = ({ url, alt, title, price, location, days }) => {
                 </Box>
 
                 <Text
+                    p='2'
                     whiteSpace="nowrap"
                     overflow='hidden'
                     textOverflow=' ellipsis'

@@ -5,10 +5,16 @@ const Footer = () => {
 
     return (
         <>
-            <Box border={'1px solid'} w='85%' h='auto' m='auto' mt='5' mb='2'>
+            <Box border={'0px solid'}
+                w='85%'
+                h='auto'
+                m='auto'
+                mt='10'
+                mb='2'>
                 <Flex w='99%' m='auto'>
-                    <Box border={'1px solid'}
-                        w='66%'
+
+                    <Box w='66%'
+                    //  border={'1px solid'}
                     >
                         <Flex fontSize={'10px'} gap='3' p='2'>
                             <Text>About Us</Text>
@@ -84,7 +90,7 @@ const Footer = () => {
                     <Spacer />
 
                     <Box
-                        border={'1px solid'}
+                        // border={'1px solid'}
                         w='33.5%' >
                         <Box
                             fontSize={'10px'}
@@ -117,7 +123,8 @@ const Footer = () => {
                             </div>
                         </Box>
 
-                        <Flex gap={'4'}
+                        <Flex
+                            gap={'4'}
                             align='center'
                             p='2'
                         >
@@ -129,7 +136,8 @@ const Footer = () => {
                             <FaYoutube />
                         </Flex>
 
-                        <Flex gap={'4'}
+                        <Flex
+                            gap={'4'}
                             align='center'
                             p='2'
                         >
