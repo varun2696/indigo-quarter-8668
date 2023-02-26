@@ -17,64 +17,63 @@ import {
     MenuList,
     MenuItem,
     Spacer,
+    Image,
 
 } from "@chakra-ui/react";
 
-import { SearchIcon, ChevronDownIcon, } from '@chakra-ui/icons';
+import { SearchIcon, ChevronDownIcon, Icon } from '@chakra-ui/icons';
 
 const Navbar = () => {
 
     return (
         <Box fontSize="10px"
-            // m={'auto'}
-            // bg={'#FFFF'}
-            // boxShadow='dark-lg'
-            marginTop={"50px"}
-            // border="1px solid"
+            w="100%"
+            m={'auto'}
+            p='2'
             size="lg">
-            <Center>
-                <HStack spacing='65px'>
-                    <Box>Logo</Box>
-                    <Box>
-                        <Flex>
-                            <Box>
-                                <Select placeholder='Select option' size='sm'>
-                                    <option value='option1'>Option 1</option>
-                                    <option value='option2'>Option 2</option>
-                                    <option value='option3'>Option 3</option>
-                                </Select>
-                            </Box>
-                            <Box>
-                                <InputGroup>
-                                    <Input placeholder='Search in Bangaluru' size='sm' />
-                                    <InputRightElement children={
-                                        <IconButton
-                                            colorScheme='blue'
-                                            aria-label='Search database'
-                                            px='1'
-                                            h='8'
-                                            marginBottom={2}
-                                            icon={<SearchIcon />}
-                                        />
-                                    } />
-                                </InputGroup>
-                            </Box>
-                        </Flex>
-                    </Box>
 
-                    <Box>
-                        <Flex alignItems={'center'}>
-                            <HStack spacing={'2.5'}>
-                                <Avatar src='https://bit.ly/broken-link' size='xs' />
-                                <Text>Login/Register</Text>
-                                <Button bg={"yellow"}>Post Free Ad</Button>
-                            </HStack>
+            <HStack mb={-8} >
+                <Box mr={6}
+                ml='60px'
+                >
+                    <Image boxSize={120}
+                        src="https://media.licdn.com/dms/image/C5622AQGtfWo8QsASUA/feedshare-shrink_800/0/1677432633472?e=1680134400&v=beta&t=x4vqbv9wCLdmSihaFyGAtKtrSBNSBspN4lJCmo8Sn7Q" />
+                </Box>
+                <Box>
+                    <Flex>
+                        <Box w='100px'>
+                            <Select placeholder='All categories' size='xs'>
+                                <option value='option1'>Cars & Bikes</option>
+                                <option value='option2'>Mobile & Tablets</option>
+                                <option value='option3'>Electronics & Appliances</option>
+                                <option value="">Real Estate</option>
+                                <option value="">Services</option>
+                                <option value="">Jobs</option>
+                            </Select>
+                        </Box>
+                        <Box>
+                            <InputGroup size={'xs'}>
+                                <Input placeholder='Search in Bangaluru' size='xs' />
+                                <InputRightElement children={
+                                    <Icon as={SearchIcon} w={4} h={4} color='blue.600' />
+                                } />
+                            </InputGroup>
+                        </Box>
+                    </Flex>
+                </Box>
+                <Spacer />
+                <Box p='12'>
+                    <Flex alignItems={'center'}>
+                        <HStack spacing={'2.5'}>
+                            <Avatar src='https://bit.ly/broken-link' size='xs' />
+                            <Text>Login/Register</Text>
+                            <Button bg={"yellow"} size='xs' p='4'>Post Free Ad</Button>
+                        </HStack>
 
-                        </Flex>
-                    </Box>
+                    </Flex>
+                </Box>
 
-                </HStack>
-            </Center>
+            </HStack>
 
             <Divider h="2" borderBottomColor={"GrayText"} />
             {/* ************************* */}
