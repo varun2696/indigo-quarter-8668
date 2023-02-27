@@ -1,4 +1,4 @@
-import { Grid, GridItem, Image, Center, Flex, Text, Button, Box, Container  } from '@chakra-ui/react'
+import { Grid, GridItem, Image, Center, Flex, Text, Button, Box, Container } from '@chakra-ui/react'
 const SinglePage = () => {
 
     return (
@@ -37,11 +37,11 @@ const SinglePage = () => {
                         <Text>Posted 3 Hours Ago</Text>
                     </Flex>
                     <Text
-                     color={"rgb(0 131 202)"}
-                      fontWeight='bold'
-                      mt={2}
-                      mb={2}
-                      >29,500</Text>
+                        color={"rgb(0 131 202)"}
+                        fontWeight='bold'
+                        mt={2}
+                        mb={2}
+                    >29,500</Text>
                     <Flex gap={5}>
 
                         <Button
@@ -55,32 +55,32 @@ const SinglePage = () => {
                         </Button>
 
                         <Button
-                          colorScheme={'facebook'}
+                            colorScheme={'facebook'}
                             size='lg'
                             width='130px'
                             height='40px'
                         >CHAT</Button>
                     </Flex>
 
-                    <Box  w='180px'  bg={'#EDF2F7'} p='2'm='4' >
+                    <Box w='180px' bg={'#EDF2F7'} p='2' m='4' >
                         <Flex gap={4} fontSize={6}  >
-                            <Box  m='auto'>
+                            <Box m='auto'>
                                 <Image boxSize={'30px'}
-                                src='https://teja9.kuikr.com/core/clsfd/assets/ic-get-all-details-2x.png'
+                                    src='https://teja9.kuikr.com/core/clsfd/assets/ic-get-all-details-2x.png'
                                 />
                                 <Text>Get all details</Text>
                             </Box>
                             <Box m='auto'>
-                            <Image boxSize={'30px'}
-                            src='https://teja9.kuikr.com/core/clsfd/assets/ic-schedule-visit-bazaar-2x.png'
-                            />
+                                <Image boxSize={'30px'}
+                                    src='https://teja9.kuikr.com/core/clsfd/assets/ic-schedule-visit-bazaar-2x.png'
+                                />
                                 <Text>Schedule a visit</Text>
                             </Box>
 
                             <Box m='auto'>
-                            <Image boxSize={'30px'}
-                            src='https://teja9.kuikr.com/core/clsfd/assets/ic-negotiate-2x.png'
-                            />
+                                <Image boxSize={'30px'}
+                                    src='https://teja9.kuikr.com/core/clsfd/assets/ic-negotiate-2x.png'
+                                />
                                 <Text>Negotiate price</Text>
                             </Box>
                         </Flex>
