@@ -7,10 +7,10 @@ import SinglePage from './Components/SinglePage';
 function App() {
   return (
     <div className="App">
-        <Navbar/>
-        <Home/>
-        <SinglePage/>
-        <Footer/>
+      <Navbar />
+      <Home />
+      <SinglePage />
+      <Footer />
     </div>
   );
 }

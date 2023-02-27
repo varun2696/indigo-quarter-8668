@@ -105,6 +105,12 @@ const ProdSlide = Popularprod.map((el) => (
 const Slider = () => {
 
     const responsive = {
+
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
+        },
         desktop: {
             breakpoint: { max: 1241, min: 800 },
             items: 6,
@@ -124,17 +130,17 @@ const Slider = () => {
 
     return (
         <>
-               <Text mt={'5'} mb={'5'}>Most Popular Products</Text>
-                <Box margin={'auto'}
-                    boxShadow='sm'
-                    textAlign={'center'}
-                    rounded='md'
-                    bg='#EDF2F7'>
-                    <Carousel responsive={responsive}>
-                        {ProdSlide}
-                    </Carousel>
-                </Box>
-           
+            <Text mt={'5'} mb={'5'}>Most Popular Products</Text>
+            <Box margin={'auto'}
+                boxShadow='sm'
+                textAlign={'center'}
+                rounded='md'
+                bg='#EDF2F7'>
+                <Carousel responsive={responsive}>
+                    {ProdSlide}
+                </Carousel>
+            </Box>
+
 
         </>
     )
